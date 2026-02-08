@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media on HTML5</title>
+    <link rel="shortcut icon" href="images/imgtittlesite.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Dynamic image</h1>
+    <p>You can try open this site in others devices or increasing and decreasing the size of the browser windows.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/img-m.png" type="image/png">
+        <img src="images/img-g.png" alt="The Image Flexible Functional">
+    </picture>
+    <h1>Playing Audio</h1>
+    <p>Lets learn to play in audio on HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="/audios/happy-mistake.mp3" type="audio/mpeg">
+        <source src="/audios/happy-mistake.mp3" type="audio/ogg">
+        <source src="/audios/happy-mistake.mp3" type="audio/wav">
+        <p>Your browser doesn't support audio. Download <a href="audios/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg"></a>here</p>
+    </audio> 
+</body>
+</html>

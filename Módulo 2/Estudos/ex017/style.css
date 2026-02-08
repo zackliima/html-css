@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(246, 223, 253), rgb(239, 162, 255));
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(119, 17, 139);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.301);
+}
+
+p {
+    /*  Uso de *shorthan* para simplificar, mas atente-se a ordem:
+        font-style -> font-weight -> font-size -> font-family
+
+    font-style: oblique;
+    font-weight: normal;
+    font-size: 0.90em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    */
+    
+    font: oblique normal 0.90em Georgia, 'Times New Roman', Times, Serif;
+}
+
+header {
+    width: 650px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
+}
+
+main {
+    width: 650px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
+}
+
+footer {
+    width: 650px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 2px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    color: rgb(67, 11, 78);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.301);
+}

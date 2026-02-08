@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Moon';
+    src: url('fonts/moon_star/Moonstar.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lamcho';
+    src: url(fonts/lamcho/LAMCHO.otf) format(opentype), url(fonts/lamcho/LAMCHO.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+    Tipos de Format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typograph)
+    - svg
+*/
+
+h1 {
+    font-family: 'Moon';
+    font-size: 2.5em;
+}
+
+p {
+    font-family: 'Lamcho';
+    font-size: 1.1em;
+}

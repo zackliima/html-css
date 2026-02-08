@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/imgtittlesite.ico" type="image/x-icon">
+    <style>
+        div:hover {
+            color: #ffffff;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: #6E77F0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hover Example</h1>
+        <p>Hover over the text below &downarrow;</p>
+        <div>
+            Hover over the text here
+            <p>Hidden text</p>
+        </div>
+        <p>Example Finished.</p>
+    </main>
+    <footer>
+        <p><a href="pseudoclasses.html" target="_self" rel="prev">Click here to return to the previous page.</a></p>
+    </footer>
+</body>
+</html>

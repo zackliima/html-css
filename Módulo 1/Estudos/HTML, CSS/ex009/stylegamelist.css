@@ -1,0 +1,40 @@
+.tittlegames {
+    color:#20232a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #20232a;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #fff;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+footer {
+    background-color: #20232a;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin-top: 300px;
+    border-radius: 30px;
+}
+
+ol {
+    color:#20232a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 95%;
+}
+
+li {
+    color:#20232a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 90%;
+}

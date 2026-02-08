@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: lightgray;
+    width: 245px;
+    height: 300px;
+    padding-top: 15px;
+    padding-right: 15px;     /* Importante!!! A ordem dos padding/margin tem que ser feita no sentido horário*/
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border: green double 15px;
+    margin: 25px;
+}
+
+a {
+    display: block; /* Você pode usar um "display:" para mudar a característica de uma box (box-level para inline-level) ou vice-versa */
+    background-color: azure;
+    padding: 15px;
+    border: red double 10px;
+    color: darkmagenta;
+}

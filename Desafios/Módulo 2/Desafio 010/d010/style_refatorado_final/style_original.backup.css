@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(rgb(122, 221, 122), rgba(1, 83, 1, 0.767));
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 0;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+
+.header-tittle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+nav {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+nav>a {
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    background-color: rgba(211, 250, 216, 0.596);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: rgb(131, 231, 166);
+}
+
+main {
+    background-color: rgba(166, 236, 190, 0.445);
+    padding-bottom: 15px;
+}
+
+.main-tittle {
+    font-family: "idroid", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-image: linear-gradient( 90deg,rgba(122, 221, 122, 0.767), rgb(255, 255, 255));
+    text-align: left;
+    text-indent: 1em;
+    color: rgb(6, 88, 27);
+    padding: 2px;
+    border-radius: 4px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.tittle-basic {
+    font-family: "idroid", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( 90deg,rgba(122, 221, 122, 0.767), rgb(255, 255, 255));
+    text-align: left;
+    text-indent: 1em;
+    color: rgb(6, 88, 27);
+    padding: 2px;
+    border-radius: 4px;
+}
+
+section {
+    background-color: white;
+    width: 550px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centraliza imagens e vídeo */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+}
+
+/* garante que imagens em <picture> fiquem ajustadas */
+main section picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* container para o iframe do YouTube */
+main section .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;   /* limite opcional */
+    aspect-ratio: 16 / 9;
+    margin: 0;
+}
+
+main section .video-container iframe {
+    width: 95%;
+    height: 95%;
+    border: 2px groove rgb(29, 77, 7);
+    border-radius: 4px;
+}
+
+.video-container {
+    background-image: linear-gradient(rgba(63, 182, 36, 0.623), rgba(6, 99, 3, 0.884));
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-android ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-android li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;    
+}
+
+footer {
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+    background-image: linear-gradient( 90deg, black 13%, rgb(166, 236, 190), rgba(203, 252, 206, 0.678));
+    color: rgb(255, 255, 255); 
+}
+
+footer>a {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+footer>a:hover {
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: rgba(121, 184, 255, 0.658);
+    border-radius: 6px;
+}
+
+.want-to-learn {
+    background-color: rgba(166, 236, 190, 0.315);
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.185);
+}
+
+#tittle-to-learn {
+    background-color: rgba(6, 99, 3, 0.884);
+    color: white;
+    height: 50px;
+    text-indent: 15px;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;  
+}
+
+aside {
+    padding: 5px;
+}
+
+.link-content {
+    font-weight: bold;
+    color: rgb(32, 116, 31);
+}
+
+.link-content:hover {
+    padding-top: 2px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    background-color: rgba(121, 184, 255, 0.329);
+    border-radius: 6px;
+}

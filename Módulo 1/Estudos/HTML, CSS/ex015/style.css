@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+    text-align: justify;
+    font-size: 10pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: darkgrey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25pt;
+}
+
+h2 {
+    color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+
+footer {
+    background-color: rgb(181, 181, 181);
+    text-align: center;
+}

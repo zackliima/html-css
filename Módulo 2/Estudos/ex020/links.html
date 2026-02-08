@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="image/imgtittlesite.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(0, 136, 255);
+        }
+
+        a:hover {
+            color: rgb(234, 0, 255);
+            text-decoration: underline;
+        }
+
+        .special::before {
+            content: '⮚ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .special::after {
+            content: ' ⮘';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .special {
+            background-color: rgba(122, 122, 122, 0.37);
+            width: 170px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customizing Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/zack.lma" target="_blank" rel="external">Instagram Profile</a></li>
+        <li class="special"><a href="https://www.youtube.com/channel/UC14gC7A1AMb8vNcO-_Mud5Q" target="_blank" rel="external">Youtube Channel</a></li>
+        <li><a href="https://www.facebook.com/isaque.lima.1213" target="_blank" rel="external">Facebook Profile</a></li>
+    </ul>
+</body>
+</html>

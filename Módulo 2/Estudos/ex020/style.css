@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(#C9E6F2, #6EF0EE);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div {
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    height: 250px;
+    width: 189px;
+    text-align: center;
+}
+
+div:hover {
+    background-color: #6E77F0;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}

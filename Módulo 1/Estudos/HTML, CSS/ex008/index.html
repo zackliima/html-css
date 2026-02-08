@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Semântico</title>
+    <style>
+        mark {
+            background-color: rgb(225, 155, 253);
+        }
+    </style>
+</head>
+<body>
+    <!--Não semântico = Apenas forma, sem sentido
+        Semântico = Com significado, importante para os Devs e ao algoritmo de busca do google
+        A forma sempre deve ser dada através do CSS3!!!!!-->
+    <h1>
+        Principais Formtações
+    </h1>
+    <h2>
+        Negrito / Destaque
+    </h2>
+    <p>
+        Nesta frase, temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não Semântico).
+    </p>
+    <p>
+        Nesta frase, temos um <strong>termo em negrito</strong> usando a tag &lt;strong&gt; (semântico).
+    </p>
+    <h2>
+        Itálico / Ênfase
+    </h2>
+    <p>
+        Nesta frase, temos um <em>termo em itálico</em> usando a tag &lt;i&gt; (não semântico).
+    </p>
+    <p>
+        Nesta frase, temos um <em>termo em itálico</em> usando a tag &lt;em&gt; (semântico).
+    </p>
+    <h2>
+        Texto Marcado
+    </h2>
+    <p>
+        Também podemos criar um <mark>texto marcado</mark> usando a tag &lt;mark&gt; (semântico).
+    </p>
+    <p>
+        Mas também podemos <mark>marcar um texto</mark> em outro parágrafo (&lt;p&gt;), utilizando o &lt;style&gt; no header a marcando a tag &lt;mark&gt; como parâmetro.
+    </p>
+    <h2>
+        Texto Grande e Pequeno
+    </h2>
+    <p>
+        Estamos utilizando um texto <big>grande</big> utilizado com a tag &lt;big&gt; (não semântico).<br>
+        E um texto <small>pequeno</small> utilizado com a tag &lt;small&gt; (semântico).<br>
+        <blockquote>Acredita-se que não existe a necessidade da tag &lt;big&gt; nos dias atuais, devido as formas/maneiras que o CSS já proporcionar para isso. No entanto, a tag &lt;small&gt; ainda pode ser utilizada devido ao fato de que em contratos e outros demais textos formais, ainda possui textos importantes que ficam <small>pequenos</small> mas que ainda tem <strong>significado!</strong></blockquote>
+    </p>
+    <h2>
+        Texto Deletado
+    </h2>
+    <p>
+        Podemos marcar um <del>texto excluído</del> que ainda pode ser lido, mas não considerado para o conteúdo apresentado.
+    </p>
+    <h2>
+        Texto Inserido
+    </h2>
+    <p>
+        Também tem a possibilidade de <ins>inserir um texto no conteúdo</ins> com a tag &lt;ins&gt;, indicando que ele foi inserido depois (semântico)
+    </p>
+    <p>
+        Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântico)
+    </p>
+    <h2>
+        Texto Sobrescrito e Subscrito
+    </h2>
+    <p>
+        Existe formas de inserir coisas do tipo 21<sup>9</sup>x3 (expressão matemática), utilizado com a tag &lt;sup&gt;.<br>
+        E inserir também a fórmula da água por exemplo: H<sub>2</sub>O, utilizado com a tag &lt;sub&gt;.<br>
+        <strong>Tag &lt;sub&gt; =</strong> Usado para subscrever algo no texto.<br>
+        <strong>Tag &lt;sup&gt; =</strong> Usado para sobrescrever algo no texto.
+    </p>
+</body>
+</html>
