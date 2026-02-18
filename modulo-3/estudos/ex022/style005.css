@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+:root {
+    --img-background: url('imagens/wallpaper003.jpg');
+}
+
+body { /* Testando a posição da imagem */
+    height: 97vh;
+    background-image: var(--img-background);
+    background-position: center top;
+    background-repeat: no-repeat;
+}

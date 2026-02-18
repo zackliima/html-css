@@ -1,0 +1,11 @@
+@charset "UFT-8";
+
+:root {
+    --testimg: url('imagens/wallpaper005.jpg');
+}
+
+body {
+    background-image: var(--testimg);
+    background-size: 50px 50px;
+    background-repeat: repeat-x;
+}

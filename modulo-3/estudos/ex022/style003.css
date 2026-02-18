@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+:root {
+    --img-lefttop: url('imagens/wallpaper003.jpg');
+    --img-leftcenter: url('imagens/wallpaper003.jpg');
+    --img-rightbottom: url('imagens/wallpaper003.jpg');
+    --img-center: url('imagens/wallpaper003.jpg');
+}
+
+.bloco {
+    border: 1px solid black;
+    width: 650px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#q1 {
+    background-image: var(--img-lefttop);
+    background-position: left top;
+}
+
+#q2 {
+    background-image: var(--img-leftcenter);
+    background-position: left center;
+}
+
+#q3 {
+    background-image: var(--img-center);
+    background-position: center;
+}
+
+#q4 {
+    background-image: var(--img-rightbottom);
+    background-position: right bottom;
+    background-size: 1316px; /* Ajustando o tamanho exato da imagem dentro dessa div - Teste */
+}

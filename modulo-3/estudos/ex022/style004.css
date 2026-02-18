@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+:root {
+    --img-test-positions: url('imagens/img-modern-design.png');
+}
+
+body {
+    border: 2px dashed black;
+    margin: 0px;
+    border-radius: 4px;
+    height: 99vh;
+    background-image: var(--img-test-positions);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right center; /* Testando posicionamento das imagens dentro do body (ou de qualquer outra tag) */
+}
