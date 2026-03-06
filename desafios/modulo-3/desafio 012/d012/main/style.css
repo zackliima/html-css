@@ -5,39 +5,52 @@
     --passion-one-regular: normal 400 2em "Passion One", sans-serif;
     --passion-one-bold: normal 700 5em "Passion One", sans-serif;
     --passion-one-black: normal 900 5em "Passion One", sans-serif;
-    --sriracha-regular: normal 400 2.2em "Sriracha", cursive;
+    --sriracha-regular: normal 400 2em "Sriracha", cursive;
 }
 
-body {
+* {
     margin: 0px;
+    padding: 0px;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    margin: 0px;
-    padding: 65px 0px 65px 0px;
-}
-
-header > p {
-    font: normal bold 1rem arial, helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 header > h1 {
-    font: var(--passion-one-bold);
-    margin: 0px;
-    padding: 0px;
+    font: normal small-caps 6em "Passion One", sans-serif;
 }
 
-#firstsection {
-    background-color: antiquewhite;
-    padding: 65px 0px 125px 30px;
-    margin: 0px;
+header > p {
+    padding: 0px 0px 50px 0px;
+    font-size: 1.2em;
+}
+
+footer > p > a, header > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover, header > p > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: darkgrey;
+    padding: 10vh;
 }
 
 .text {
+    background-color: rgba(0, 0, 0, 0.233);
     font: var(--sriracha-regular);
+    line-height: 2em;
+}
+
+footer {
+    background-color: rgb(92, 91, 91);
+    color: white;
 }
