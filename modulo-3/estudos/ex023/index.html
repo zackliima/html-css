@@ -5,33 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <link rel="shortcut icon" href="../ex022/imagens/imgtittlesite.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style001.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>My First Table</h1>
+
+    <!-- 
+        HIERARQUIA DE TABELAS (Simples)
+        Table = Tabela (table)
+            Table Row = Linha de Tabela (tr)
+                Table Header = Cabeçalho de Tabela (th)
+                Table Data = Dado de Tabela (td)
+    -->
+
     <table>
-        <tr>
+        <tr> <!-- 1° Linha (row) -->
             <td>A1</td>
-            <td>B1</td>
+            <td>B1</td> <!-- Dados da Tabela -->
             <td>C1</td>
         </tr>
-        <tr>
+        <tr class="grayrow"> <!-- 2° Linha (row) -->
             <td>A2</td>
-            <td>B2</td>
+            <td>B2</td> <!-- Dados da Tabela -->
             <td>C2</td>
         </tr>
-        <tr>
+        <tr> <!-- 3° Linha (row) -->
             <td>A3</td>
-            <td>B3</td>
+            <td class="yellowdata">B3</td> <!-- Dados da Tabela -->
             <td>C3</td>
         </tr>
-        <tr>
+        <tr class="grayrow"> <!-- 4° Linha (row) -->
             <td>A4</td>
-            <td>B4</td>
+            <td>B4</td> <!-- Dados da Tabela -->
             <td>C4</td>
         </tr>
-        <tr></tr>
-        <tr></tr>
+        <tr> <!-- 5° Linha (row) -->
+            <td>A5</td>
+            <td>B5</td> <!-- Dados da Tabela -->
+            <td>C5</td>
+        </tr>
+        <tr> <!-- 6° Linha (row) -->
+            <td>A6</td>
+            <td class="yellowdata">B6</td> <!-- Dados da Tabela -->
+        </tr>
+        <tr> <!-- 7° Linha (row) -->
+            <td>A7</td> <!-- Dados da Tabela -->
+        </tr>
     </table>
 </body>
 </html>
