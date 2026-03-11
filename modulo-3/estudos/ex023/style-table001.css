@@ -43,5 +43,5 @@ td {
     background-color: var(--colornumber);
     height: 50px;
     text-align: right;
-    vertical-align: bottom;
+    vertical-align: bottom; /* Alinhamento vertical */
 }
