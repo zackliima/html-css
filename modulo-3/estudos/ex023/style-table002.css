@@ -1,2 +1,41 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.container-table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 20px 10px 20px 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px 10px 20px 10px;
+}
+
+tfoot {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+tfoot > tr > td {
+    padding: 10px 10px 10px 10px;
+}
