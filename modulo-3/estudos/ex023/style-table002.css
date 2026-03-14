@@ -4,7 +4,13 @@
     --foundimg: url('imagens/img-brasil.png');
     --borderglass: border: 1px solid rgba(255, 255, 255, 0.3);
     --boxshadowglass: 0 4px 30px rgba(0, 0, 0, 0.2);
+    --img-acre: url('imagens/estados/acre.png');
+    --img-bahia: url('imagens/estados/bahia.png');
+    --img-mato-grosso: url('imagens/estados/mato-grosso.png');
+    --img-para: url('imagens/estados/para.png');
 }
+
+/* Estilização */
 
 * {
     margin: 0px;
@@ -55,8 +61,10 @@ tfoot > tr > td {
 
 .cityname {
     text-align: left;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px black;
+    width: 135px;
 }
 
 body::before {
@@ -68,4 +76,34 @@ body::before {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 0;
+}
+
+/* Fundo dos estados: */
+
+#AC {
+    background-image: var(--img-acre);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#BA {
+    background-image: var(--img-bahia);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#MT {
+    background-image: var(--img-mato-grosso);
+    background-size: 165px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#PA {
+    background-image: var(--img-para);
+    background-size: 165px;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
