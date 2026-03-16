@@ -4,10 +4,37 @@
     --foundimg: url('imagens/img-brasil.png');
     --borderglass: border: 1px solid rgba(255, 255, 255, 0.3);
     --boxshadowglass: 0 4px 30px rgba(0, 0, 0, 0.2);
-    --img-acre: url('imagens/estados/acre.png');
+    
+    /* Imagens dos Estados*/
+    
+    --img-saopaulo: url('');
+    --img-minasgerais: url('imagens/estados/minasgerais.png');
+    --img-riodejaneiro: url('');
     --img-bahia: url('imagens/estados/bahia.png');
-    --img-mato-grosso: url('imagens/estados/mato-grosso.png');
+    --img-parana: url('imagens/estados/parana.png');
+    --img-riograndedosul: url('');
+    --img-pernambuco: url('');
+    --img-ceara: url('');
     --img-para: url('imagens/estados/para.png');
+    --img-santacatarina: url('');
+    --img-goias: url('');
+    --img-maranhao: url('');
+    --img-amazonas: url('');
+    --img-paraiba: url('');
+    --img-espiritosanto: url('');
+    --img-mato-grosso: url('imagens/estados/mato-grosso.png');
+    --img-riograndedonorte: url('');
+    --img-piaui: url('');
+    --img-alagoas: url('');
+    --img-distritofederal: url('');
+    --img-matogrossodosul: url('');
+    --img-sergipe: url('');
+    --img-rondonia: url('');
+    --img-tocantins: url('');
+    --img-acre: url('imagens/estados/acre.png');
+    --img-amapa: url('');
+    --img-roraima: url('');
+
 }
 
 /* Estilização */
@@ -80,12 +107,7 @@ body::before {
 
 /* Fundo dos estados: */
 
-#AC {
-    background-image: var(--img-acre);
-    background-size: 170px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
+/* x3 acima do BA */
 
 #BA {
     background-image: var(--img-bahia);
@@ -94,12 +116,7 @@ body::before {
     background-position: left center;
 }
 
-#MT {
-    background-image: var(--img-mato-grosso);
-    background-size: 165px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
+/* x4 acima do PA */
 
 #PA {
     background-image: var(--img-para);
@@ -107,3 +124,23 @@ body::before {
     background-repeat: no-repeat;
     background-position: right center;
 }
+
+/* x6 acima do MT */
+
+#MT {
+    background-image: var(--img-mato-grosso);
+    background-size: 165px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* x8 acima do AC */
+
+#AC {
+    background-image: var(--img-acre);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* x2 acima do restante aqui */
