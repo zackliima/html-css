@@ -107,7 +107,7 @@ body::before {
 
 /* Fundo dos estados: */
 
-/* x2 acima do BA */
+/* SP */
 
 #MG {
     background-image: var(--img-minasgerais);
@@ -116,6 +116,8 @@ body::before {
     background-position: right center;
 }
 
+/* RJ */
+
 #BA {
     background-image: var(--img-bahia);
     background-size: 170px;
@@ -123,7 +125,12 @@ body::before {
     background-position: left center;
 }
 
-/* x4 acima do PA */
+#PR {
+    background-image: var(--img-parana);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
 
 #PA {
     background-image: var(--img-para);
