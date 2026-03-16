@@ -10,6 +10,7 @@
 <body>
     <!-- Anatomia Para Tabelas Grandes
             table
+                caption
                 thead
                     tr, td, th
                 tbody
@@ -21,14 +22,15 @@
     </header>
     <div class="container-table">
         <table>
+            <!-- Ainda posso colocar um caption aqui -->
             <thead>
                 <tr>
-                    <th>Federal Unit</th>
-                    <th>Population Estimate 2025</th>
-                    <th>Population Estimate 2024</th>
-                    <th>Absolute Variation</th>
-                    <th>Percentage Variation</th>
-                    <th>% of Total</th>
+                    <th scope="col">Federal Unit</th>
+                    <th scope="col">Population Estimate 2025</th>
+                    <th scope="col">Population Estimate 2024</th>
+                    <th scope="col">Absolute Variation</th>
+                    <th scope="col">Percentage Variation</th>
+                    <th scope="col">% of Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -251,7 +253,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td></td>
+                    <th scope="row">Total/Sum</th>
                     <td>213 421 037</td>
                     <td>203 080 756</td>
                     <td>12 324 957</td>

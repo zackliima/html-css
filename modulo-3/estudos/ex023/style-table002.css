@@ -13,26 +13,26 @@
     --img-bahia: url('imagens/estados/bahia.png');
     --img-parana: url('imagens/estados/parana.png');
     --img-riograndedosul: url('');
-    --img-pernambuco: url('');
+    --img-pernambuco: url('imagens/estados/pernambuco.png');
     --img-ceara: url('');
     --img-para: url('imagens/estados/para.png');
     --img-santacatarina: url('');
     --img-goias: url('');
-    --img-maranhao: url('');
+    --img-maranhao: url('imagens/estados/maranhao.png');
     --img-amazonas: url('');
     --img-paraiba: url('');
     --img-espiritosanto: url('');
     --img-mato-grosso: url('imagens/estados/mato-grosso.png');
-    --img-riograndedonorte: url('');
+    --img-riograndedonorte: url('imagens/estados/riograndedonorte.png');
     --img-piaui: url('');
-    --img-alagoas: url('');
+    --img-alagoas: url('imagens/estados/alagoas.png');
     --img-distritofederal: url('');
-    --img-matogrossodosul: url('');
+    --img-matogrossodosul: url('imagens/estados/matogrossodosul.png');
     --img-sergipe: url('');
     --img-rondonia: url('');
     --img-tocantins: url('');
     --img-acre: url('imagens/estados/acre.png');
-    --img-amapa: url('');
+    --img-amapa: url('imagens/estados/amapa.png');
     --img-roraima: url('');
 
 }
@@ -107,7 +107,14 @@ body::before {
 
 /* Fundo dos estados: */
 
-/* x3 acima do BA */
+/* x2 acima do BA */
+
+#MG {
+    background-image: var(--img-minasgerais);
+    background-size: 185px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
 
 #BA {
     background-image: var(--img-bahia);
