@@ -132,6 +132,17 @@ body::before {
     background-position: left center;
 }
 
+/* RS */
+
+#PE {
+    background-image: var(--img-pernambuco);
+    background-size: 190px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* CE */
+
 #PA {
     background-image: var(--img-para);
     background-size: 165px;
@@ -139,7 +150,22 @@ body::before {
     background-position: right center;
 }
 
-/* x6 acima do MT */
+/* SC */
+
+/* GO */
+
+#MA {
+    background-image: var(--img-maranhao);
+    background-size: 185px;
+    background-repeat: no-repeat;
+    background-position: left center;    
+}
+
+/* AM */
+
+/* PB */
+
+/* ES */
 
 #MT {
     background-image: var(--img-mato-grosso);
@@ -148,7 +174,36 @@ body::before {
     background-position: left center;
 }
 
-/* x8 acima do AC */
+#RN {
+    background-image: var(--img-riograndedonorte);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* PI */
+
+#AL {
+    background-image: var(--img-alagoas);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* DF */
+
+#MS {
+    background-image: var(--img-matogrossodosul);
+    background-size: 195px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* SE */
+
+/* RO */
+
+/* TO */
 
 #AC {
     background-image: var(--img-acre);
@@ -157,4 +212,11 @@ body::before {
     background-position: left center;
 }
 
-/* x2 acima do restante aqui */
+#AP {
+    background-image: var(--img-amapa);
+    background-size: 195px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* RR */
