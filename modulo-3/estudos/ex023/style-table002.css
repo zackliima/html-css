@@ -70,6 +70,7 @@ table {
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(12.5px);
     z-index: 1;
+    position: relative;
 }
 
 th {
@@ -80,6 +81,16 @@ td {
     border: var(--borderglass);
     padding: 20px 10px 20px 10px;
     text-align: right;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    border: var(--borderglass);
+    border-collapse: collapse;
+    box-shadow: var(--boxshadowglass);
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12.5px);
 }
 
 tfoot > tr > td {
@@ -103,6 +114,14 @@ body::before {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 0;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: rgba(255, 255, 0, 0.15);
+}
+
+tbody > tr:nth-child(even) {
+    background-color: rgba(0, 128, 0, 0.15);
 }
 
 /* Fundo dos estados: */
