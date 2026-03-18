@@ -15,14 +15,14 @@
         <caption>Favorite Movies</caption>
         <thead>
         <tr>
-            <th>Groups</th>
-            <th>Names</th>
-            <th colspan="3">Movies</th>
+            <th scope="col">Groups</th>
+            <th scope="col">Names</th>
+            <th colspan="3" scope="colgroup">Movies</th>
         </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Women</th>
+                <th rowspan="3" scope="rowgroup">Women</th>
                 <td>Ana Maria Santos</td>
                 <td>Allien</td>
                 <td>Rambo</td>
@@ -41,7 +41,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Men</th>
+                <th rowspan="3" scope="rowgroup">Men</th>
                 <td>Enzo Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -60,6 +60,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
