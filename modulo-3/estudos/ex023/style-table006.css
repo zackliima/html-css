@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 3vh 0px 3vh 0px;
+}
+
+div > p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+table {
+    margin: 5vh 10vw 0vh 10vw;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    border: 3px solid black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.35);
+}
+
+th {
+    background-color: rgba(128, 128, 128, 0.35);
+}
+
+th, td {
+    padding: 15px;
+    width: 80px;
+}
+
+td {
+    text-align: right;
+}
+
+.products {
+    text-align: left;
+    text-align: bold;
+    width: 170px;
+}
+
+#container-table {
+    overflow-x: auto;
+    margin: auto;
+}
