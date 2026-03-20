@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 5vh 0px 5vh 0px;
+}
+
+table {
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    border: 3px solid black;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+th, td {
+    padding: 10px;
+    width: 120px;
+    border: 1px solid black;
+}
+
+#col-name, .col-occupation {
+    background-color: rgba(128, 128, 128, 0.30);
+}
+
+.col-gender-and-age {
+    background-color: rgba(250, 235, 215, 0.35);
+}
