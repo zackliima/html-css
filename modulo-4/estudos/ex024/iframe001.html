@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studying Iframes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Test With Iframes</h1>
+
+    <!-- Tamanho padrão de Iframes é 300x150 -->
     
-    p>Accessing Zack's website, which was created for Monique: <iframe src="https://mdsa-sunflower.pages.dev" frameborder="0"></iframe></p>
+    <p>Accessing Zack's website, which was created for Monique: 
+        <iframe src="https://mdsa-sunflower.pages.dev" frameborder="0" height="500px">
+            <a href="https://mdsa-sunflower.pages.dev">Moni WebSite</a>
+            <!-- Caso algum navegador não suporte iFrames (raros), coloque o link do site junto com algum texto. -->
+        </iframe></p>
     
-    <p>Trying to access the Google website: <iframe src="https://www.google.com" frameborder="0"></iframe></p> 
+    <p>Guanabara Repository: 
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe></p> 
     
     <!-- Note que alguns sites tem segurança contra Iframes por questões de privacidade sobre terceiros. -->
 
