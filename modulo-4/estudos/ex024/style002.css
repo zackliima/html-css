@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    max-width: 750px;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    padding: 5vh 0px 5vh 0px;
+}
