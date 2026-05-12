@@ -25,7 +25,6 @@
 
 html, body {
     height: 100vh;
-    width: 100vh;
 }
 
 body {
@@ -39,11 +38,11 @@ main {
 }
 
 #cellphone {
-    background: var(--img-borderiphone) no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 630px;
     width: 310px;
+    background: var(--img-borderiphone) no-repeat;
 }
