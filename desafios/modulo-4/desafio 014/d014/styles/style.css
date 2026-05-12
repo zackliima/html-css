@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root {
+    --img-foundsite: url(../images/fundo-madeira.jpg);
+    --img-borderiphone: url(../images/frame-iphone.png);
+    --img-logofacebook: url(../images/logo-facebook.jpg);
+    --img-logotwitter: url(../images/logo-twitter.jpg);
+    --img-logoinstagram: url(../images/logo-instagram.jpg);
+    --img-logogithub: url(../images/logo-github.jpg);
+    --img-logoyoutube: url(../images/logo-youtube.jpg);
+    --img-logohome: url(../images/logo-home.jpg);
+    --img-screenfacebook: url(../images/tela-facebook.jpg);
+    --img-screengithub: url(../images/tela-github.jpg);
+    --img-screenhome: url(../images/tela-home.jpg);
+    --img-screeninstagram: url(../images/tela-instagram.jpg);
+    --img-screentwitter: url(../images/tela-twitter.jpg);
+    --img-screenyoutube: url(../images/tela-youtube.png);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vh;
+}
+
+body {
+    background: var(--img-foundsite) bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+#cellphone {
+    background: var(--img-borderiphone) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 630px;
+    width: 310px;
+}
