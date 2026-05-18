@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test New Forms</title>
+</head>
+<body>
+    <h1>Forms Test</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <div>
+            <label for="iuser">User: </label>
+            <input type="text" name="user" id="iuser" required minlength="15" maxlength="30" size="20" placeholder="User Name" autocomplete="username">
+        </div>
+        
+        <div>
+            <label for="ipass">Password: </label>
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="60" size="15" placeholder="Your Password" autocomplete="current-password">
+        </div>
+
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+</body>
+</html>
