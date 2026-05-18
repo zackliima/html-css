@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Forms</title>
+</head>
+<body>
+    <h1>Testing Forms</h1>
+    <form action="" method="get" autocomplete="on">
+        <div>
+            <label for="iname">Name: </label>
+            <input type="text" name="name" id="iname" minlength="15" maxlength="60" required autocomplete="name" placeholder="Enter Your Name">
+        </div>
+
+        <div>
+            <label for="imedia">Average Grade: </label>
+            <input type="number" name="media" id="imedia" min="0" max="10" required step="0.1" value="5.5">
+        </div>
+
+        <div>
+            <label for="imonth">Academic Period: </label>
+            <input type="month" name="month" id="imonth" value="2026-05">
+        </div>
+
+        <div>
+            <label for="idate">Test Date: </label>
+            <input type="date" name="date" id="idate" value="2026-05-18">
+        </div>
+
+        <div>
+            <label for="itime">Test Time: </label>  
+            <input type="time" name="time" id="itime">  
+        </div>
+
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+</body>
+</html>
