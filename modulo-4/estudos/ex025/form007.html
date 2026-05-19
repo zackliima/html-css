@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing New Tags</title>
+</head>
+<body>
+    <h1>Example Form</h1>
+    <form action="" method="post" autocomplete="off">
+        <div>
+            <label for="ista">State: </label>
+            <select name="sta" id="ista">
+                <optgroup label="Northern Region">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Northeastern Region">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Central-West Region">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Southeastern Region">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Southern Region">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iocc">Occupation: </label>
+            <input type="text" name="occ" id="iocc" list="list-iocc">
+            <datalist id="list-iocc">
+                <option value="admi">Administrator</option>
+                <option value="deve">Developer</option>
+                <option value="elec">Electrician</option>
+                <option>Cook</option>
+                <option>Journalist</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">Description: </label></br>
+            <textarea name="msg" id="imsg" placeholder="Describe Your Profession Here"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+</body>
+</html>
