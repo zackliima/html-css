@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Example Form</h1>
+    <form action="" method="post">
+        <div>
+            <label for="iyear">In what year were you born? </label>
+            <input type="number" name="year" id="iyear" min="1926" max="2026" oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="yearold">You were born in: </label>
+            <output id="yearold">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+    <script>
+        function calcIdade() {
+            let current = new Date().getFullYear()
+            yearold.innerHTML = Number(current) - Number (iyear.value)
+        }
+    </script>    
+</body>
+</html>

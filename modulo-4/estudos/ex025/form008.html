@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Example Form</h1>
+    <form action="" method="post">
+        <div>
+            <label for="in1">Number 1: </label>
+            <input type="number" name="n1" id="in1" min="1" max="50" required
+            oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="in2">Number 2: </label>
+            <input type="number" name="n2" id="in2" min="1" max="50" required oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="isoma">Sum: </label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </div>
+    </form>
+</body>
+</html>
