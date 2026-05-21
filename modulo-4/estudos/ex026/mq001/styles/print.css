@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Printer Styles */
+
+* {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+menu {
+    display: none;
+}
+
+header {
+    background-color: rgb(209, 209, 209);
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+header > h1 {
+    margin-bottom: 15px;
+}
+
+article > h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+article {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    line-height: 1.5em;
+}
+
+article > p {
+    margin: 1.25em 0px 1.25em 0px;
+}
+
+
+article::after {
+    content: "This article was created for Media Query testing purposes by Zack";
+}
