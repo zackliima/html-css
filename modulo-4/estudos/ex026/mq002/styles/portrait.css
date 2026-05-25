@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Portrait Styles */
+
+
+body {
+    background-image: url(/modulo-4/estudos/ex026/images/cev-portrait.jpg);
+    background-position: center bottom;
+}

@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Landscape Styles */
+
+body {
+    background-image: url(/modulo-4/estudos/ex026/images/cev-landscape.jpg);
+    background-position: left bottom;
+}
