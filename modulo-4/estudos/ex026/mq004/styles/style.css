@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Mobile First Version */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+    background-image: url(/modulo-4/estudos/ex026/mq004/images/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.650);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#media-phone { display: block; }
+img#media-tablet { display: none; }
+img#media-pc { display: none; }
+img#media-tv { display: none; }
+img#media-print { display: none; }
