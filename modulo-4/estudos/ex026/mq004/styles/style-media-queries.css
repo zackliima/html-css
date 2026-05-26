@@ -2,6 +2,73 @@
 
 /* All Other Media */
 
-@media print {
+/*  Typical Device Breakpoints (2026):
     
+    Extra Small (Mobile): 0px to 575px
+    Small (Large Mobile/Small Tablet): 576px to 767px
+    Medium (Tablet): 768px to 991px
+    Large (Desktop): 992px to 1199px
+    Extra Large (Large Desktop): 1200px to 1399px
+    Extra Extra Large (Widescreen): 1400px and up 
+
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../images/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main > h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after {
+        content: "That is what the print template for this website will look like";
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { /* Tablet */
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    img#media-phone { display: none; }
+    img#media-tablet { display: block; }
+    img#media-pc { display: none; }
+    img#media-tv { display: none; }
+    img#media-print { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { /* Desktop */
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    img#media-phone { display: none; }
+    img#media-tablet { display: none; }
+    img#media-pc { display: block; }
+    img#media-tv { display: none; }
+    img#media-print { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* TV */
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    img#media-phone { display: none; }
+    img#media-tablet { display: none; }
+    img#media-pc { display: none; }
+    img#media-tv { display: block; }
+    img#media-print { display: none; }
 }
