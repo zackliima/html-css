@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* All Other Media */
+
+/*  Typical Device Breakpoints (2026):
+    
+    Extra Small (Mobile): 0px to 575px
+    Small (Large Mobile/Small Tablet): 576px to 767px
+    Medium (Tablet): 768px to 991px
+    Large (Desktop): 992px to 1199px
+    Extra Large (Large Desktop): 1200px to 1399px
+    Extra Extra Large (Widescreen): 1400px and up 
+
+*/
+
+@media screen and (min-width: 768px) {
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    menu#items {
+        display: block;
+        background-color: #03738C;
+        text-align: center;
+    }
+
+    menu#items > ul > li {
+        display: inline-block;
+    }
+
+    menu#items > ul > li > a {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        border-radius: 1px 1px 0px 0px;
+        margin: 0px 2vw 0px 2vw;
+    }
+
+    main {
+        width: 768px;
+    }
+}
