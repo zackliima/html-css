@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url(variables.css);
+
+/*  Typical Device Breakpoints (2026):
+    
+    Extra Small (Mobile): 0px to 575px
+    Small (Large Mobile/Small Tablet): 576px to 767px
+    Medium (Tablet): 768px to 991px
+    Large (Desktop): 992px to 1199px
+    Extra Large (Large Desktop): 1200px to 1399px
+    Extra Extra Large (Widescreen): 1400px and up 
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+    main {
+        width: 80vw;
+    }
+
+    main > section#main-login {
+        height: 100%;
+    }
+    
+    main > section#main-login > div#image-form {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-image: var(--image-form2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.200);
+    }
+
+    main > section#main-login > div#form-login {
+        float: right;
+        width: 60%;
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        width: 80vw;
+    }
+
+    main > section#main-login {
+        height: 100%;
+    }
+    
+    main > section#main-login > div#image-form {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-image: var(--image-form2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.200);
+    }
+
+    main > section#main-login > div#form-login {
+        float: right;
+        width: 50%;
+        padding: 80px;
+    }
+}

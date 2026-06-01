@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+:root {
+    --color-light-gray: #F2F2F2;
+    --color-purple: #AA3DF2;
+    --color-blue: #4B94F2;
+    --color-mint: #B1E3DD;
+    --color-light-blue: #C4D8F2;
+    --image-form: url('../images/found.png');
+    --image-form2: url('../images/found-portrait.png');
+}
