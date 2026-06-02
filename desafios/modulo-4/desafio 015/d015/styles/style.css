@@ -34,10 +34,18 @@ html {
 }
 
 main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  min-height: 575px;
+}
+
+main>section#main-login {
   background-color: var(--color-light-gray);
   width: 80vw;
-  height: 90%;
-  position: relative;
+  height: 90vh;
+  min-height: 575px;
+  position: absolute;
   border-radius: 20px;
   top: 50%;
   left: 50%;
@@ -96,12 +104,30 @@ main>section#main-login>div#form-login {
 
 .field {
   background-color: #4B94F2;
-  padding: 15px;
+  padding: 2px;
+  border-radius: 7.5px;
+  margin: 3vh 0px;
 }
 
 .field-end {
   background-color: #B1E3DD;
   padding: 6px 0px;
+}
+
+form > div > input::placeholder {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.9em;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+form > div > input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: none;
 }
 
 form > div > input[type="submit"] {
