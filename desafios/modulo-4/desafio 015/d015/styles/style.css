@@ -1,82 +1,81 @@
 @charset "UTF-8";
 @import url(variables.css);
 
-/* Mobile First Version */ 
+/* Mobile First Version */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body, html {
-    height: 100vh;
-    width: 100vw;
-    background-image: 
-    radial-gradient(
-      circle at top left,
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  background-image:
+    radial-gradient(circle at top left,
       #4B94F2 0%,
-      transparent 40%
-    ),
+      transparent 40%),
 
-    radial-gradient(
-      circle at right center,
+    radial-gradient(circle at right center,
       #B1E3DD 0%,
-      transparent 35%
-    ),
+      transparent 35%),
 
-    radial-gradient(
-      circle at bottom right,
+    radial-gradient(circle at bottom right,
       #C4D8F2 0%,
-      transparent 40%
-    ),
+      transparent 40%),
 
-    linear-gradient(
-      160deg,
+    linear-gradient(160deg,
       #4B94F2 0%,
       #B1E3DD 55%,
-      #C4D8F2 100%
-    );
+      #C4D8F2 100%);
 }
 
 main {
-    background-color: var(--color-light-gray);
-    width: 310px;
-    height: 90%;
-    position: relative;
-    border-radius: 20px;    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
-    transition: width 0.15s, height 0.15s;
-    transition-timing-function: ease;
+  background-color: var(--color-light-gray);
+  width: 80vw;
+  height: 90%;
+  position: relative;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+  transition: width 0.15s, height 0.15s;
+  transition-timing-function: ease;
 }
 
-main > section#main-login > div#image-form {
-    background-image: var(--image-form);
-    height: 15vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center left;
+main>section#main-login>div#image-form {
+  background-image: var(--image-form);
+  height: 15vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
-main > section#main-login > div#form-login > h1 {
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.200);
+main>section#main-login>div#form-login>h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.200);
 }
 
-main > section#main-login > div#form-login {
-    padding: 15px;
-    transition: width 0.55s, height 0.55s;
-    transition-timing-function: ease;
+main>section#main-login>div#form-login>p {
+  padding: 15px 5px;
+}
+
+main>section#main-login>div#form-login {
+  padding: 15px;
+  transition: width 0.55s, height 0.55s;
+  transition-timing-function: ease;
 }
 
 .material-symbols-outlined {
   font-size: 22.5px;
+  padding: 0px 10px;
 }
 
 .icon-person {
@@ -93,4 +92,38 @@ main > section#main-login > div#form-login {
     'wght' 700,
     'GRAD' -50,
     'opsz' 50;
+}
+
+.field {
+  background-color: #4B94F2;
+  padding: 15px;
+}
+
+.field-end {
+  background-color: #B1E3DD;
+  padding: 6px 0px;
+}
+
+form > div > input[type="submit"] {
+  background-color: aqua;
+  display: block;
+  font-size: 1.5em;
+  width: 100%;
+  border: none;
+  padding: 17.5px 0px;
+  margin: 15px 0px;
+}
+
+form > div > a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+form > div.field-end > span.material-symbols-outlined {
+  display: block;
+  text-align: center;
+  padding: 1.5px 0px 6px 0px;
 }
