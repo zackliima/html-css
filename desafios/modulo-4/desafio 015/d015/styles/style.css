@@ -83,7 +83,7 @@ main>section#main-login>div#form-login {
 
 .material-symbols-outlined {
   font-size: 22.5px;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 .icon-person {
@@ -103,15 +103,21 @@ main>section#main-login>div#form-login {
 }
 
 .field {
-  background-color: #4B94F2;
+  background-color: var(--color-mint);
   padding: 2px;
   border-radius: 7.5px;
   margin: 3vh 0px;
 }
 
 .field-end {
-  background-color: #B1E3DD;
+  background-color: var(--color-light-blue);
   padding: 6px 0px;
+  border-radius: 7.5px;
+}
+
+.field-end:hover {
+  color: var(--color-purple);
+  transition: color 0.5s;
 }
 
 form > div > input::placeholder {
@@ -130,14 +136,24 @@ form > div > input {
   border: none;
 }
 
-form > div > input[type="submit"] {
-  background-color: aqua;
+form > div.field-login > input[type="submit"] {
+  background-color: var(--color-light-blue);
+  border-radius: 7.5px;
   display: block;
   font-size: 1.5em;
   width: 100%;
   border: none;
-  padding: 17.5px 0px;
+  padding: 17.5px 0px 22.5px 0px;
   margin: 15px 0px;
+  color: var(--color-purple);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.200);
+  font-weight: 700;
+}
+
+form > div.field-login > input[type="submit"]:hover {
+  background-color: var(--color-purple);
+  color: var(--color-mint);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 form > div > a {
@@ -146,6 +162,13 @@ form > div > a {
   width: 100%;
   padding: 5px 0px;
   text-decoration: none;
+  color: var(--color-purple);
+}
+
+form > div.field-end > a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  transition: font-weight 0.5s;
 }
 
 form > div.field-end > span.material-symbols-outlined {
