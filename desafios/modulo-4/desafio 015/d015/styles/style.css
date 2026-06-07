@@ -12,8 +12,8 @@
 
 body,
 html {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100dvh;
+  width: 100%;
   background-image:
     radial-gradient(circle at top left,
       #4B94F2 0%,
@@ -37,26 +37,27 @@ main {
   position: relative;
   height: 100vh;
   width: 100vw;
-  min-height: 575px;
+  min-height: 800px;
 }
 
-main>section#main-login {
-  background-color: var(--color-light-gray);
+section#main-login {
+  background: rgba(242, 242, 242, 0.500);
+  backdrop-filter: blur(15px);
   width: 80vw;
   height: 90vh;
-  min-height: 575px;
+  min-height: 800px;
   position: absolute;
   border-radius: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
   transition: width 0.15s, height 0.15s;
   transition-timing-function: ease;
 }
 
-main>section#main-login>div#image-form {
+div#image-form {
   background-image: var(--image-form);
   height: 15vh;
   background-size: cover;
@@ -64,21 +65,26 @@ main>section#main-login>div#image-form {
   background-position: center left;
 }
 
-main>section#main-login>div#form-login>h1 {
+div#form-login > h1 {
   font-size: 2.5em;
   text-align: center;
   margin: 10px 0px 10px 0px;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.200);
 }
 
-main>section#main-login>div#form-login>p {
+div#form-login > p {
   padding: 15px 5px;
 }
 
-main>section#main-login>div#form-login {
+div#form-login {
   padding: 15px;
   transition: width 0.55s, height 0.55s;
   transition-timing-function: ease;
+}
+
+div#form-login > form {
+  max-width: 75%;
+  margin: auto;
 }
 
 .material-symbols-outlined {
@@ -109,6 +115,10 @@ main>section#main-login>div#form-login {
   margin: 3vh 0px;
 }
 
+.field > label {
+  display: none;
+}
+
 .field-end {
   background-color: var(--color-light-blue);
   padding: 6px 0px;
@@ -128,12 +138,22 @@ form > div > input::placeholder {
   font-variant: small-caps;
 }
 
-form > div > input {
+form > div.field > input {
   width: 100%;
   height: 100%;
   padding: 10px 0px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+div.field > input:hover {
+  border-color:#4B94F2;
+}
+
+form > div.field > input:focus{
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgb(75, 148, 242, .35);
 }
 
 form > div.field-login > input[type="submit"] {

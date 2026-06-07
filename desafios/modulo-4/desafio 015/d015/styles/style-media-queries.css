@@ -34,6 +34,11 @@
         width: 60%;
         padding: 50px;
     }
+
+    main > section#main-login > div#form-login > form {
+        max-width: 450px;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -62,5 +67,10 @@
         float: right;
         width: 50%;
         padding: 80px;
+    }
+
+    main > section#main-login > div#form-login > form {
+        max-width: 450px;
+        margin: auto;
     }
 }
