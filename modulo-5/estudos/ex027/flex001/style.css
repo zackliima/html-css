@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+    flex: auto;
+}
