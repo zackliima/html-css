@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column-reverse; /* 
+    
+    row: (Padrão) Os itens ficam em uma linha horizontal, ordenados da esquerda para a direita (ou na direção do texto atual).
+    
+    row-reverse: Dispostos horizontalmente, mas invertidos (da direita para a esquerda).
+    
+    column: Os itens são organizados em uma coluna vertical, de cima para baixo.
+    
+    column-reverse: Organizados em uma coluna vertical, de baixo para cima (invertidos). */
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+}
