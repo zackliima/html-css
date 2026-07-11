@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    height: 150px; /* sempre necessário o uso do height quando se usa column em flex-flow */
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+    flex: auto;
+}
