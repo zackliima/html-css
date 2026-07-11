@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+}
