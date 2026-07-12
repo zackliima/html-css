@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    display: flex;
+    height: 400px;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+}

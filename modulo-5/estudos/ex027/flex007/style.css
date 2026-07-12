@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+}
+
+#i1 {
+    order: 0;
+}
+
+#i2 {
+    order: 2;
+}
+
+#i3 {
+    order: 4;
+}
+
+#i4 {
+    order: -3;
+}
+
+#i5 {
+    order: 9;
+}
+
+#i6 {
+    order: -6;
+}
