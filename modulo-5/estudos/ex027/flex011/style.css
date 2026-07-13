@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.conteiner {
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.items {
+    background-color: azure;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 200px;
+}
+
+#boxA {
+    flex-grow: 3;
+    flex-shrink: 0;
+}
+
+#boxB {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#boxC {
+    flex-grow: 0;
+    flex-shrink: 3;
+}
