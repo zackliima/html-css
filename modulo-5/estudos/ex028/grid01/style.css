@@ -7,6 +7,11 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     gap: 15px;
+    align-items: normal; /* normal = stretch */
+    justify-items: normal; /* justify = horizontal */
+    align-content: normal; /* align = vertical */
+    justify-content: normal; /* content = container */
+    /* items = itens do container */
 }
 
 .item {
