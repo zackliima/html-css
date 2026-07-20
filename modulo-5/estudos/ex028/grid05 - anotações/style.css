@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    border: 3px solid black;
+    padding: 5px;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+.box1 {
+    /* forma completa */
+    background-color: rgba(255, 0, 0, 0.5);
+    grid-row-start: 1;
+    grid-row-end: span 1; /* possível usar span (expansão linha/coluna) */
+    grid-column-start: 1;
+    grid-column-end: span 4; /* span sempre no end */
+}
+
+.box2 {
+    /* valores em negativo */
+    /* forma simplificada */
+    background-color: rgba(0, 0, 255, 0.5);
+    grid-row: -3 / -1;
+    grid-column: -5 / -3;
+}
+
+.box3 {
+    /* valores em negativo e positivo */
+    /* forma simplificada máxima */
+    background-color: rgba(0, 128, 0, 0.5);
+    grid-area: -3 / 3 / -1 / 5;
+
+    /*
+    grid-row-start: -3;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    */
+}
