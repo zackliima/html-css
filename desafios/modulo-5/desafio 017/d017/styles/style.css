@@ -7,3 +7,53 @@
   --destaque-inverso
   --fundo-card
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: #F5F5F5;
+  --text: #222222;
+  --inverse-text: #FFFFFF;
+  --highlight: #0077FF;
+  --inverse-highlight: #66BBFF;;
+  --card-background: #FFFFFF;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--main-background);
+  color: var(--text);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  background-color: var(--highlight);
+  padding: 10px;
+}
+
+#menu ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--inverse-text);
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: background-color .5s, color 0.5s;
+}
+
+#menu a:hover {
+  background-color: var(--inverse-highlight);
+  color: var(--highlight);
+}
