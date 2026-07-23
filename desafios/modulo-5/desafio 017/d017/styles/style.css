@@ -57,3 +57,55 @@ header {
   background-color: var(--inverse-highlight);
   color: var(--highlight);
 }
+
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+}
+
+#data-sheet {
+  grid-column: 2;
+  background-color: var(--card-background);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#data-sheet > img.photo {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--card-background);
+  outline: 5px solid var(--highlight);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#data-sheet > h1 {
+  color: var(--highlight);
+  margin: 15px 0px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  gap: 1em;
+  margin-top: 15px;
+}
+
+#social > a {
+  color: var(--highlight);
+  transition: color 0.5s;
+}
+
+#social > a:hover {
+  color: var(--inverse-highlight);
+}
