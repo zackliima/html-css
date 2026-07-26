@@ -116,7 +116,7 @@ main {
 
 #details h2 {
   color: var(--highlight);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 article, #video {
@@ -152,6 +152,7 @@ article, #video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 2em;
 }
 
 #skill-container > .item > .info > .name {
@@ -175,4 +176,110 @@ article, #video {
   height: 100%;
   background-color: var(--inverse-highlight);
   border-radius: 4px;
+}
+
+#graduation-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#graduation-container > .course {
+  background-color: var(--main-background);
+  border-radius: 8px;
+  border-left: 5px solid var(--inverse-highlight);
+  padding: 7px 0px 7px 14px;
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+#graduation-container > .course:hover {
+  border-color: var(--highlight);
+  border-left-width: 16px;
+  cursor: pointer;
+}
+
+#graduation-container > .course > .period {
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: var(--text);
+}
+
+#graduation-container > .course > .institution {
+  font-weight: bolder;
+  font-size: 1.3em;
+  color: var(--inverse-highlight);
+}
+
+#graduation-container > .course > .qualification {
+  font-weight: 600;
+  color: var(--text);
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#projects-container > .project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--main-background);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid var(--inverse-highlight);
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+#projects-container > .project:hover {
+  border-color: var(--highlight);
+  border-left-width: 16px;
+  cursor: pointer;
+}
+
+#projects-container > .project > .photo {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--highlight);
+  color: var(--inverse-text);
+  text-align: center;
+  padding: 15px;
+}
+
+footer > a {
+  color: var(--inverse-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer > a:hover {
+  color: var(--inverse-highlight);
+}
+
+@media screen and (min-width: 768px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #projects-container .project {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #projects-container .project-info {
+    max-width: 60%;
+  }
+
+  #projects-container .photo {
+    aspect-ratio: 1/1;
+    max-width: 40%;
+    max-height: 350px;
+  }
 }
