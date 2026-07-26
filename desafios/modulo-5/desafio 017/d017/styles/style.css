@@ -198,19 +198,19 @@ article, #video {
   cursor: pointer;
 }
 
-#graduation-container > .course > .period {
+#graduation-container > .course > .period, #projects-container > .project > .project-info > .period {
   font-weight: bolder;
   font-size: 0.8em;
   color: var(--text);
 }
 
-#graduation-container > .course > .institution {
+#graduation-container > .course > .institution, #projects-container > .project > .project-info > .title {
   font-weight: bolder;
   font-size: 1.3em;
   color: var(--inverse-highlight);
 }
 
-#graduation-container > .course > .qualification {
+#graduation-container > .course > .qualification, #projects-container > .project > .project-info > .description{
   font-weight: 600;
   color: var(--text);
 }
