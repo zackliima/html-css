@@ -23,11 +23,21 @@
   --card-background: #FFFFFF;
 }
 
+body.dark {
+  --main-background: #0F1117;
+  --text: #E8EAF0;
+  --inverse-text: #111111;
+  --highlight: #8B5CF6;
+  --inverse-highlight: #B794F6;
+  --card-background: #1A1D26;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--main-background);
   color: var(--text);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -36,6 +46,9 @@ header {
   align-content: center;
   background-color: var(--highlight);
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul{
@@ -264,6 +277,21 @@ footer > a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  #data-sheet {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 200px;
+  }
+
+  #details {
+    grid-column: 3 / 4;
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }

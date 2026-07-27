@@ -1,25 +1,25 @@
-const botao = document.getElementById('botao-tema');
+const botao = document.getElementById('theme-button');
 const body = document.body;
 
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
-temaEscuro(temasalvo === 'escuro');
+temaEscuro(temasalvo === 'dark');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
   if (tipo == true) {
-    body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    body.classList.add('dark');
+    botao.innerHTML = '<i class="fa-solid fa-cloud-sun"></i>';
   } else {
-    body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    body.classList.remove('dark');
+    botao.innerHTML = '<i class="fa-solid fa-cloud-moon"></i>';
   }
 }
 
 botao.addEventListener('click', () => {
-  const isescuro = body.classList.toggle('escuro');
+  const isescuro = body.classList.toggle('dark');
   temaEscuro(isescuro);
-  localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+  localStorage.setItem('tema', isescuro ? 'dark' : 'claro');
 });
 
 // Scroll suave para links de navegação
