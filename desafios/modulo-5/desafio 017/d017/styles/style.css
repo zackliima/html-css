@@ -232,6 +232,7 @@ article, #video {
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+  margin-top: 20px;
 }
 
 #projects-container > .project {
