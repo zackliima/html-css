@@ -286,7 +286,11 @@ footer > a:hover {
     grid-column: 2 / 3;
     height: fit-content;
     position: sticky;
-    top: 200px;
+    top: 20px;
+  }
+
+  #video {
+    margin-top: 20px;
   }
 
   #details {
