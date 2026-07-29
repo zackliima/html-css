@@ -38,9 +38,21 @@ body {
 header {
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.items {
+    display: flex;
+}
+
+.items > nav > ul {
+    display: flex;
 }
 
 .items a, li {
     text-decoration: none;
     list-style: none;
+    padding: 0px 15px;
 }
