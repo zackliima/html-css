@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*  Typical Device Breakpoints (2026):
+    
+    Extra Small (Mobile): 0px to 575px
+    Small (Large Mobile/Small Tablet): 576px to 767px
+    Medium (Tablet): 768px to 991px
+    Large (Desktop): 992px to 1199px
+    Extra Large (Large Desktop): 1200px to 1399px
+    Extra Extra Large (Widescreen): 1400px and up 
+
+*/
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    #logo-tittle {
+        width: 200px;
+    }
+    
+    #logo-tittle > p {
+        display: flex;
+        width: 140px;
+    }
+    
+    .items span {
+        display: block;
+        margin-left: 8px;
+    }
+
+    .items a::after {
+        height: 5px;
+    }
+}
