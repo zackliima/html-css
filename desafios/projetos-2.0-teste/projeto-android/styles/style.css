@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 20px 16px;
     color: var(--text-white);
     background: 
     radial-gradient(circle at top right,
@@ -55,49 +55,38 @@ header {
     );
 }
 
-#logo-tittle {
-    width: 180px;
-    justify-content: space-between;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-#logo-tittle > img {
+.logo > img {
     height: 40px;
     width: 40px;
-    object-fit: cover;
-    overflow: hidden;
-    margin-left: 10px;
-}
-
-#logo-tittle > p {
-    width: 100px;
-    display: none;
 }
 
 nav ul {
     display: flex;
-    gap: 40px;
+    gap: 2rem;
+    list-style: none;
 }
 
-.items {
-    flex: 1;
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.items span {
-    display: none;
-}
-
-.items a {
+header a {
     text-decoration: none;
     color: var(--text-white);
     position: relative;
     display: inline-flex;
     align-items: center;
+    gap: 10px;
 }
 
-.items a::after {
+header a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -111,15 +100,14 @@ nav ul {
     transition: transform 0.35s ease;
 }
 
-.items a:hover::after {
+header a:hover::after {
     transform: scaleX(1);
 }
 
-.items li {
-    list-style: none;
+.logo span,
+nav span,
+.actions span {
+    display: none;
 }
 
-#explore {
-    margin-right: 10px;
-}
 /* End of Header */

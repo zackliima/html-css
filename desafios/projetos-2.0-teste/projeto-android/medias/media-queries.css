@@ -11,26 +11,42 @@
 
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
     header {
         justify-content: space-evenly;
     }
 
-    #logo-tittle {
-        width: 200px;
+    .logo {
+        flex: 0 0 185px;
     }
     
-    #logo-tittle > p {
-        display: flex;
-        width: 140px;
-    }
-    
-    .items span {
-        display: block;
-        margin-left: 8px;
+    .logo span,
+    nav span {
+        display: inline;
     }
 
-    .items a::after {
+    nav a::after {
         height: 5px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        flex: 0 0 200px;
+    }
+    
+    .logo span,
+    nav span,
+    .actions span {
+        display: inline;
+    }
+
+    .actions span {
+        padding: 0px 30px;
+        border-radius: 100px;
     }
 }
