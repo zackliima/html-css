@@ -24,10 +24,6 @@
     nav span {
         display: inline;
     }
-
-    nav a::after {
-        height: 5px;
-    }
 }
 
 @media screen and (min-width: 991px) {
@@ -40,13 +36,60 @@
     }
     
     .logo span,
-    nav span,
-    .actions span {
+    nav span {
         display: inline;
     }
 
     .actions span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: 0px 30px;
         border-radius: 100px;
+        position: relative;
+        overflow: hidden;
+
+        /* Glass */
+        background: rgba(223, 248, 231, .10);
+        border: 1px solid rgba(255,255,255,.18);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        /* Aparência */
+        color: var(--text-white);
+        font-weight: 500;
+        letter-spacing: .3px;
+        box-shadow:
+            0 0 0 1px rgba(255,255,255,.05),
+            0 8px 24px rgba(15,81,50,.18);
+        transition: 
+            background .3s ease,
+            border-color .3s ease,
+            box-shadow .3s ease,
+            transform .3s ease;
+    }
+
+    .actions span::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        border-radius: inherit;
+        background: 
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.18),
+            rgba(255,255,255,.02)
+        );
+        pointer-events: none;
+    }
+
+    .actions span:hover {
+        background: rgba(223, 248, 231, .16);
+        border-color: rgba(255,255,255,.30);
+        box-shadow:
+            0 0 0 1px rgba(255,255,255,.08),
+            0 12px 30px rgba(15,81,50,.25),
+            inset 0 1px 0 rgba(255,255,255,.18);
+        transform: translateY(-2px) scale(1.02);
     }
 }

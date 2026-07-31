@@ -45,7 +45,8 @@ header {
     padding: 20px 16px;
     color: var(--text-white);
     background: 
-    radial-gradient(circle at top right,
+    radial-gradient(
+        circle at top right,
         var(--primary) 0%, 
         transparent 45%),
     linear-gradient(
