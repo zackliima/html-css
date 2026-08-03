@@ -1,3 +1,18 @@
-﻿<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 1000 120">
-    <path d='M0 70 C150 70 250 20 450 45 C650 70 800 80 1000 55 L1000 120 L0 120 Z' fill='#ff0000'></path>
+﻿<svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 1000 120" preserveAspectRatio="none">
+    <path d='
+        M0 60
+
+        C120 55 180 55 250 62
+
+        C340 72 430 80 500 70
+
+        C620 55 720 55 800 68
+
+        C900 75 960 70 1000 60
+
+        L1000 120
+
+        L0 120
+        
+        Z' fill='#ff0000'></path>
 </svg>
