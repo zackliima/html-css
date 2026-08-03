@@ -116,11 +116,12 @@ nav span,
 /* Start of Main > Section Hero */
 
 .hero {
+    color: var(--text-white);
     display: flex;
     min-height: 35vh;
-    background: url(../images/background-hero-mobile.png) center top no-repeat scroll;
+    background: url(../images/background-hero-mobile.png) right top no-repeat scroll;
     background-size: cover;
-    padding: 30px 20px;
+    padding: 30px;
 }
 
 .hero-content {
@@ -133,6 +134,10 @@ nav span,
 
 .hero-content > h1 {
     line-height: 1em;
+}
+
+.word-green {
+    color: var(--primary);
 }
 
 /* End of Main > Section Hero */
