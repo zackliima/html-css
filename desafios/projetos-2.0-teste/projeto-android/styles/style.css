@@ -116,22 +116,23 @@ nav span,
 /* Start of Main > Section Hero */
 
 .hero {
-    min-height: 420px;
+    display: flex;
+    min-height: 35vh;
     background: url(../images/background-hero-mobile.png) center top no-repeat scroll;
-    background-size: contain;
+    background-size: cover;
     padding: 30px 20px;
 }
 
 .hero-content {
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 1 50%;
+    gap: 16px;
 }
 
 .hero-content > h1 {
     line-height: 1em;
-}
-
-.hero-content > p {
-    padding: 10px 0px;
 }
 
 /* End of Main > Section Hero */
