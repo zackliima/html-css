@@ -161,21 +161,23 @@ main {
 
 /* Start of Main > Section and Article */
 
-.content {
+.content, .content-aside {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
     justify-content: center;
-    padding: 0px 15px;
-    margin: 0px 15px 20px 15px;
     background-color: var(--bg-section);
     border-radius: 8px;
     border: 1px solid var(--border);
     box-shadow: 0 8px 20px var(--shadow);
 }
 
+.test {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 .content > article {
-    padding: 20px 15px 0px 15px;
     line-height: 1.6rem;
 }
 
