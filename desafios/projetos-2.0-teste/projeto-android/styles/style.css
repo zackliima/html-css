@@ -12,13 +12,13 @@
     --bg-section: #FFFFFF;
     --bg-dark: #071A12;
 
-    /* Verdes */
+    /* Shades of Green */
     --primary: #2DBE60;
     --primary-dark: #15803D;
     --primary-darker: #0F5132;
     --primary-light: #DFF8E7;
 
-    /* Texto */
+    /* Texts */
     --text: #1F2937;
     --text-light: #6B7280;
     --text-white: #FFFFFF;
@@ -187,7 +187,7 @@ article > div {
     flex: 1 1 300px;
     max-width: 768px;
     background-color: var(--bg-page);
-    border-radius: 8px;
+    border-radius: 16px;
     border: 1px solid var(--border);
 }
 
@@ -199,3 +199,9 @@ article > div > img {
 }
 
 /* End of Main > Section and Article */
+
+/* Start of Main > Aside */
+
+
+
+/* End of Main > Aside */
