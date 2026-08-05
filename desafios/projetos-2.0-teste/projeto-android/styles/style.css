@@ -7,7 +7,6 @@
 }
 
 :root {
-
     /* Backgrounds */
     --bg-page: #F4F7F5;
     --bg-section: #FFFFFF;
@@ -27,12 +26,12 @@
     /* Extras */
     --border: #E5E7EB;
     --shadow: rgba(15, 81, 50, .15);
-
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
+    color: var(--text);
 }
 
 /* Start of Header */
@@ -115,6 +114,10 @@ nav span,
 
 /* Start of Main > Section Hero */
 
+main {
+    background-color: var(--bg-page);
+}
+
 .hero {
     color: var(--text-white);
     display: flex;
@@ -146,7 +149,7 @@ nav span,
     gap: 16px;
 }
 
-.hero-content > h1 {
+.hero-content > h1, article > h1 {
     line-height: 1em;
 }
 
@@ -155,3 +158,44 @@ nav span,
 }
 
 /* End of Main > Section Hero */
+
+/* Start of Main > Section and Article */
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 15px;
+    margin: 0px 15px 20px 15px;
+    background-color: var(--bg-section);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.content > article {
+    padding: 20px 15px 0px 15px;
+    line-height: 1.6rem;
+}
+
+article > h1, article > h2, article > p, article > div {
+    margin-bottom: 1.5rem;
+}
+
+article > div {
+    flex: 1 1 300px;
+    max-width: 768px;
+    background-color: var(--bg-page);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+article > div > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* End of Main > Section and Article */
