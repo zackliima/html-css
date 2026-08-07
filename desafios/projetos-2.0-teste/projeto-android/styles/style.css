@@ -219,6 +219,15 @@ article > div > img {
     object-fit: cover;
 }
 
+.image-parallax {
+    background-image: url(../images/image-parallax-mobile.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 270px;
+}
+
 /* End of Main > Section and Article */
 
 /* Start of Main > Aside */
