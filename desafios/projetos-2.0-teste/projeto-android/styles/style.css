@@ -11,6 +11,8 @@
     --bg-page: #F4F7F5;
     --bg-section: #FFFFFF;
     --bg-dark: #071A12;
+    --bg-light: #e7f5e6;
+    --bg-light2: #DAEDDB;
 
     /* Shades of Green */
     --primary: #2DBE60;
@@ -165,24 +167,31 @@ main {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
-    padding: 4dvh 0;
+    padding: 2dvh 0;
     margin: 2.5vw;
     justify-content: center;
     background-color: var(--bg-section);
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 8px 20px var(--shadow);
 }
 
 .icon-title {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 0.75em;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding: 0 2.5vw;
+    padding: 1.5dvh 2.5vw;
     margin-bottom: 1.5dvh;
+    border-left: 10px solid var(--bg-section);
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    background: linear-gradient(85deg, var(--primary), transparent 75%);
 }
 
-.icon-history, .icon-android, .icon-robot {
+.icon-history, .icon-android, .icon-robot, .icon-gradutation {
     display: inline-flex;
     width: 35px;
     height: 35px;
@@ -205,11 +214,20 @@ article > p {
 }
 
 article > .content-images {
+    justify-self: center;
     flex: 1 1 300px;
     max-width: 768px;
     background-color: var(--bg-page);
     border-radius: 16px;
     border: 1px solid var(--border);
+}
+
+article > .dan-droids {
+    margin: 0px 4vw;
+}
+
+article > .irina-blok {
+    
 }
 
 article > div > img {
@@ -237,11 +255,15 @@ article > div > img {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: linear-gradient(
-        185deg,
-        rgba(255,255,255,.12),
-        transparent 35%
-    );
+    background: 
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.20),
+            transparent 25%),
+        linear-gradient(
+            315deg,
+            rgba(255,255,255,.20),
+            transparent 25%);
     pointer-events: none;
 }
 
@@ -249,6 +271,92 @@ article > div > img {
 
 /* Start of Main > Aside */
 
+.content-aside > article {
+    background-color: var(--bg-light);
+    margin: 0 2.5vw;
+    border-radius: 8px;
+    
+}
 
+.content-aside > article > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 170px;
+    align-content: space-around;
+    list-style: none;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.check-list {
+    font-size: 1.25em;
+    color: var(--primary);
+    margin: 0 5px;
+}
+
+.curiosity-aside {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8em;
+    background-color: var(--bg-section);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    line-height: 1.25em;
+}
+
+
+.curiosity-aside > .icon-info {
+    font-size: 1.5em;
+    color: var(--primary);
+    margin-top: 2.5px;
+}
+
+.footer-aside {
+    background-color: var(--bg-light2);
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.content-video {
+    margin: 2.5vw;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 20px var(--shadow);
+    overflow: hidden;
+}
+
+.video {
+    padding: 10px;
+    background:
+        radial-gradient(
+            circle at top center,
+            var(--primary),
+            transparent 65%
+        ),
+        linear-gradient(
+            135deg,
+            var(--primary-darker),
+            var(--primary-dark) 50%,
+            var(--primary-darker)
+        );
+    border-radius: 10px;
+    box-shadow:
+        0 8px 20px var(--shadow),
+        0 0 12px rgba(45, 190, 96, .25);
+}
+
+.video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+    border-radius: 6px;
+}
 
 /* End of Main > Aside */
