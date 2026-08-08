@@ -230,7 +230,6 @@ article > div > img {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(15, 81, 50, 0.16);
-    overflow: hidden;
 }
 
 .image-parallax::after {
@@ -239,7 +238,7 @@ article > div > img {
     inset: 0;
     border-radius: inherit;
     background: linear-gradient(
-        135deg,
+        185deg,
         rgba(255,255,255,.12),
         transparent 35%
     );
