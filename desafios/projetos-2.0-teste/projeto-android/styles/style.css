@@ -34,6 +34,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
     color: var(--text);
+    min-height: 100dvh;
 }
 
 /* Start of Header */

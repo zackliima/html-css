@@ -122,8 +122,8 @@
 
     main {
         display: grid;
-        grid-template-rows: 200px 200px auto auto auto;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: 1.5vw auto 1.5vw auto 1.5vw;
+        grid-template-rows: 200px 200px 2.5dvh auto 2.5dvh;
     }
 
     main > .hero {
@@ -131,11 +131,17 @@
     }
 
     main > .content {
-        grid-area: 3 / 2 / 6 / 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
     }
 
     .main > aside {
-        grid-area: 2 / 4 / 5 / 5;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
     }
 
     main > .content, .content-aside, .content-video {
