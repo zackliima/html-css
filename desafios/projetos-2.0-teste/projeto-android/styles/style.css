@@ -123,8 +123,8 @@ main {
 .hero {
     color: var(--text-white);
     display: flex;
-    min-height: 35vh;
-    background: url(../images/background-hero-mobile.png) right top no-repeat scroll;
+    min-height: 35dvh;
+    background: url(../images/background-hero-mobile1.png) left center no-repeat scroll;
     background-size: cover;
     padding: 30px;
     /* For the SVG below: */
@@ -168,7 +168,7 @@ main {
     flex-flow: column nowrap;
     gap: 20px;
     padding: 2dvh 0;
-    margin: 2.5vw;
+    margin: 2.5vh 2.5vw;
     justify-content: center;
     background-color: var(--bg-section);
     border-radius: 10px;
@@ -204,6 +204,10 @@ main {
     margin: 0 5px;
 }
 
+.icon-link {
+    color: var(--primary);
+}
+
 .content > article {
     line-height: 1.6rem;
 }
@@ -226,8 +230,8 @@ article > .dan-droids {
     margin: 0px 4vw;
 }
 
-article > .irina-blok {
-    
+.irina-blok {
+    width: 100%;
 }
 
 article > div > img {
@@ -239,7 +243,7 @@ article > div > img {
 
 .image-parallax {
     position: relative;
-    background-image: url(../images/image-parallax-mobile.png);
+    background-image: url(../images/image-parallax.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -265,6 +269,24 @@ article > div > img {
             rgba(255,255,255,.20),
             transparent 25%);
     pointer-events: none;
+}
+
+main a {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--primary-darker);
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 15px;
+    transition: transform .3s ease, background-color .3s ease, color .3s ease;
+    transform: translateY(-2px);
+}
+
+main a:hover {
+    background-color: var(--primary-darker);
+    color: var(--text-white);
+    text-decoration: underline;
+    transform: translateY(2px);
 }
 
 /* End of Main > Section and Article */
