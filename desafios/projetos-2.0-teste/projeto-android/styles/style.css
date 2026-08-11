@@ -296,7 +296,7 @@ main a:hover {
 
 .content-aside > article {
     background-color: var(--bg-light);
-    margin: 0 2.5vw;
+    margin: 0 1rem;
     border-radius: 8px;
 }
 
