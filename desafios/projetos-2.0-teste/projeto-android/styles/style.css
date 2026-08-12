@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Michroma&display=swap');
+
+@font-face {
+    font-family: "idroid";
+    src: url(../fonts/idroid-font/Idroid-0rod.woff2) format("woff2");
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -31,8 +38,9 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.5em;
+    font-family: "Lato", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--text);
     min-height: 100dvh;
 }
@@ -213,6 +221,18 @@ main {
     line-height: 1.6rem;
 }
 
+article > div > h1 {
+    font-family: "idroid", "Michroma", "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article > div > h2, .content-aside > div > h3 {
+    font-family: "Michroma", "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 article > p {
     padding: 0 4vw;
     margin: 2dvh 0;
@@ -303,11 +323,12 @@ main a:hover {
 .content-aside > article > ul {
     display: flex;
     flex-flow: column wrap;
-    height: 170px;
+    height: 180px;
     align-content: space-around;
     list-style: none;
     font-size: 0.8em;
     font-weight: bold;
+    line-height: 2;
 }
 
 .check-list {
