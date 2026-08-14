@@ -298,7 +298,6 @@ main a {
     text-decoration: none;
     padding: 2px 8px;
     border-radius: 15px;
-    transition: transform .3s ease, background-color .3s ease, color .3s ease;
     transform: translateY(-2px);
 }
 
@@ -370,7 +369,7 @@ main a:hover {
 }
 
 .content-video {
-    margin: 2.5vw;
+    margin: 1rem;
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 8px 20px var(--shadow);
