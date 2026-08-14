@@ -36,7 +36,11 @@
     }
 
     .hero-content {
-        padding: 0 60px;
+        padding: 30px 60px;
+    }
+
+    .icon-title {
+        margin: 0 2vw 1rem 2vw;
     }
 
     /* End of Main */
@@ -52,6 +56,10 @@
     .hero {
         background: url(../images/background-hero-desktop.png) center center no-repeat scroll;
         background-size: cover;
+    }
+
+    .hero-wave {
+        bottom: -25px;
     }
 
     .logo {
@@ -145,7 +153,11 @@
     }
 
     .hero-content {
-        padding: 15px 90px;
+        padding: 60px 90px;
+    }
+
+    .content > article > .icon-title {
+        margin: 0 2vw 1rem 2vw;
     }
 
     /* End of Main */
