@@ -38,6 +38,10 @@
     --shadow: rgba(15, 81, 50, .15);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lato", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
@@ -222,7 +226,7 @@ main {
     padding: 7.5px;
 }
 
-.icon-link {
+.icon-link, .icon-github, .icon-google, .icon-discord {
     color: var(--primary);
 }
 
@@ -419,7 +423,9 @@ main a:hover {
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
     font-size: 0.75em;
     color: var(--text-white);
     padding: 1.25dvh 0;
@@ -452,6 +458,14 @@ footer > p > small {
 .shadow-text {
     /* Also applied to other areas of HTML */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+    font-style: normal;
 }
 
 /* End of Footer */
